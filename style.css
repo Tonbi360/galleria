@@ -1,0 +1,121 @@
+:root {
+    --bg: #f9f9f7; /* Off-white, paper-like */
+    --text: #2c2c2c; /* Soft black */
+    --accent: #5d5d5d;
+    --card-bg: #ffffff;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -0.05rem;
+    margin: 0;
+}
+
+#week-display {
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* Grid Layout */
+#gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Design */
+.card {
+    background: var(--card-bg);
+    padding: 1.5rem;    border-radius: 4px; /* Slight round, not too much */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    background-color: #eee;
+}
+
+.name {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.bio {
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.update-box {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: auto; /* Pushes to bottom */
+}
+
+.mood {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.links {    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-bottom: 1px solid transparent;
+}
+
+.links a:hover {
+    border-bottom: 1px solid var(--text);
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
+    color: var(--accent);
+    font-size: 0.8rem;
+}
