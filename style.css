@@ -1,0 +1,102 @@
+/* --- Modal Styles --- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(249, 249, 247, 0.95); /* Semi-transparent bg */
+    backdrop-filter: blur(5px); /* Fancy blur effect */
+    overflow: auto;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: var(--card-bg);
+    margin: 10% auto;
+    padding: 3rem;
+    border: 1px solid var(--border);
+    width: 90%;
+    max-width: 600px;
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: slideUp 0.4s ease;
+}
+
+.close-btn {
+    color: var(--accent);
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.close-btn:hover {
+    color: var(--text);
+}
+
+/* Modal Content Specifics */
+.modal-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    border: 1px solid var(--border);
+}
+.modal-name {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.modal-bio {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 2rem;
+}
+
+.modal-update {
+    background: #fafafa;
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 1rem;
+    display: block;
+}
+
+.modal-links {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Animations */
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Mobile Adjustments for Modal */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 5% auto;
+        padding: 1.5rem;
+        width: 95%;
+    }    .modal-name {
+        font-size: 1.5rem;
+    }
+}
