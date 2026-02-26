@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "week": 1,
+    "year": 2026,
+    "theme": "Beginnings"
+  },
+  "members": [
+    {
+      "id": "tonbi",
+      "name": "Tonbi",
+      "bio": "Curator | Comp Eng | Builder",
+      "avatar": "https://via.placeholder.com/150",
+      "links": {
+        "discord": "#",
+        "email": "#"
+      },
+      "update": {
+        "active": true,
+        "text": "Welcome to Galleria. Let's build something quiet.",
+        "image": "",
+        "mood": "🌙"
+      }
+    },
+    {
+      "id": "user2",
+      "name": "Friend Two",
+      "bio": "Artist | Dreamer",
+      "avatar": "https://via.placeholder.com/150",
+      "links": {
+        "instagram": "#"
+      },
+      "update": {
+        "active": false,
+        "text": "",
+        "image": "",
+        "mood": ""
+      }
+    }
+  ]
+}
